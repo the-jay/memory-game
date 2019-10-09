@@ -32,9 +32,12 @@ function flipCard() {
 			correct[0].classList.add('found');
 			correct[1].classList.add('found');
 			flipped = false;
+			moves += 1;
+			wins += 1;
+			checkWin();
 		}
 		else {
-			setTimeout(clearFlip, 2000);
+			setTimeout(clearFlip, 1000);
 			function clearFlip() {
 				let wrong = document.querySelectorAll('.show');
 				for (i = 0; i < wrong.length; i++) { 
@@ -43,16 +46,22 @@ function flipCard() {
 				}
 			}
 			flipped = false;
+			moves += 1;
 		}
 	}
+	return; 
 }
 
 
 // Win
-
-
-let moves =+ 1;
-let wins =+ 1;
+	
+function checkWin() {
+	console.log(wins);
+	if (wins === 6) {
+		alert('Gratulerer!');
+	}
+	return; 
+}
 
 //Init
 
