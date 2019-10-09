@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
 body {
 	background: linear-gradient(120deg, #619940, #2a3e97) fixed;
+	font-family: 'Ubuntu Condensed', Helvetica, sans-serif;
 }
 #wrap {
 	width:100%;
@@ -11,9 +14,27 @@ body {
 	display:flex;
 	flex-wrap: wrap;
 }
+#header {
+	display: flex;
+	font-size: 4vw;
+	color: white;
+	margin:auto;
+}
+#moves, #shuffle {
+	margin:1% 2%;
+	padding:5px 20px;
+}
+#shuffle {
+	border-radius: 4%;
+	background:#ffb700;
+	
+}
+#spacer {
+	flex-grow: 1;
+}
 .card {
 	background-size: cover;
-	background:#e9dc63;
+	background:linear-gradient(120deg, #e9dc63, #fff9c5) center center;
 	width:23%;
 	padding-bottom: 20%;
 	float:left;
@@ -37,4 +58,12 @@ body {
 }
 .card.six.show, .card.six.found{
 	background-image: url(img/six.jpg);
+}
+ 
+ @media only screen and (max-width: 720px) {
+	 
+	 .card {
+	width:31.3%;
+}
+	 
 }

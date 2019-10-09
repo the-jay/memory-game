@@ -4,12 +4,16 @@
 	<head>
 		<title>Memory Game</title>
 		<link rel="stylesheet" href="style.css" title="style" type="text/css" media="screen" charset="utf-8">
-		<script src="script.js" charset="utf-8">
-			
-		</script>
+		<script src="script.js" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
 	</head>
 	<body>
 		<section id="wrap">
+			<div id="header">
+				<div id="moves">Trekk: 0</div>
+				<div id="spacer"></div>
+				<div id="shuffle" onclick="shuffleCards()">Reset</div>
+			</div>
 			<div id="board">
 				<div class="card one"></div>
 				<div class="card one"></div>
