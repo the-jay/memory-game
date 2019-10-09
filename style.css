@@ -1,0 +1,40 @@
+body {
+	background: linear-gradient(120deg, #619940, #2a3e97) fixed;
+}
+#wrap {
+	width:100%;
+	max-width:1200px;
+	margin:auto;
+
+}
+#board {
+	display:flex;
+	flex-wrap: wrap;
+}
+.card {
+	background-size: cover;
+	background:#e9dc63;
+	width:23%;
+	padding-bottom: 20%;
+	float:left;
+	margin:1%;
+	border-radius:3%;
+}
+.card.one.show {
+	background-image: url(img/one.jpg);
+}
+.card.two.show {
+	background-image: url(img/two.jpg);
+}
+.card.three.show {
+	background-image: url(img/three.jpg);
+}
+.card.four.show {
+	background-image: url(img/four.jpg);
+}
+.card.five.show {
+	background-image: url(img/five.jpg);
+}
+.card.six.show {
+	background-image: url(img/six.jpg);
+}
