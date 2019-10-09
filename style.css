@@ -20,21 +20,21 @@ body {
 	margin:1%;
 	border-radius:3%;
 }
-.card.one.show {
+.card.one.show, .card.one.found{
 	background-image: url(img/one.jpg);
 }
-.card.two.show {
+.card.two.show, .card.two.found{
 	background-image: url(img/two.jpg);
 }
-.card.three.show {
+.card.three.show, .card.three.found{
 	background-image: url(img/three.jpg);
 }
-.card.four.show {
+.card.four.show, .card.four.found{
 	background-image: url(img/four.jpg);
 }
-.card.five.show {
+.card.five.show, .card.five.found{
 	background-image: url(img/five.jpg);
 }
-.card.six.show {
+.card.six.show, .card.six.found{
 	background-image: url(img/six.jpg);
 }
